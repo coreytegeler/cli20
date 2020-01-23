@@ -1,0 +1,38 @@
+{
+  "name": "cli20",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "watch": "gulp watch",
+    "build": "gulp build --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/coreytegeler/cli20.git"
+  },
+  "author": "Corey Tegeler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coreytegeler/cli20/issues"
+  },
+  "homepage": "https://github.com/coreytegeler/cli20#readme",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-cli": "^2.0.0",
+    "gulp-file-include": "^2.1.1",
+    "gulp-if": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "merge": ">=1.2.1",
+    "npm": "^6.12.0",
+    "yargs": "^6.6.0"
+  }
+}
