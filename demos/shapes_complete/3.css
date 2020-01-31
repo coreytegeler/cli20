@@ -1,0 +1,35 @@
+/*
+CSS Properties to use:
+position, top, left, width, height
+*/
+body {
+	perspective: 1000px;
+}
+#circle {
+	width: 403px;
+	position: fixed;
+	left: 284px;
+	top: 0px;
+	transform: rotateX(52deg) rotateY(29deg);
+}
+#rectangle {
+	width: 178px;
+	position: fixed;
+	left: 559px;
+	top: 356px;
+	transform: rotateX(-46deg);
+}
+#square {
+	width: 269px;
+	position: fixed;
+	left: 721px;
+	top: 90px;
+	transform: rotateZ(60deg);
+}
+#triangle {
+	width: 257px;
+	position: fixed;
+	left: 302px;
+	top: 477px;
+	transform: rotateX(-131deg) rotateY(-65deg);
+}

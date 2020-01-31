@@ -1,0 +1,32 @@
+/*
+CSS Properties to use:
+position, top, left, width, height
+*/
+
+#circle {
+	width: 210px;
+	position: fixed;
+	left: 739px;
+	top: 72px;
+}
+#rectangle {
+	width: 215px;
+	position: fixed;
+	left: 416px;
+	top: 232px;
+	transform: rotate(41.5deg);
+}
+#square {
+	width: 245px;
+	position: fixed;
+	left: 696px;
+	top: 419px;
+	transform: rotate(28deg);
+}
+#triangle {
+	width: 415px;
+	position: fixed;
+	left: 297px;
+	top: 55px;
+	transform: rotate(90deg);
+}
