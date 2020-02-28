@@ -1,0 +1,21 @@
+#peanut {
+	width: 310px;
+	float: left;
+	margin-left: -130px;
+	shape-outside: url(imgs/peanut.png);
+	shape-margin: 5px;
+}
+
+#bananas {
+	width: 520px;
+	float: right;
+	margin-right: -160px;
+	shape-outside: url(imgs/bananas.png);
+	shape-margin: 20px;
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	shape-outside: circle(50%)
+}
