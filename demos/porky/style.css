@@ -1,0 +1,61 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.inline-svg {
+	margin: 5vh auto;
+	display: table;
+}
+.inline-svg svg {
+	height: 90vh;
+}
+
+#hat * {
+	transition: all 500ms ease-in-out;
+}
+
+#hat:hover * {
+	animation: rainbow 1000ms infinite linear;
+}
+
+@keyframes rainbow {
+	0% {
+		fill: #047CC1;
+	}
+	50% {
+		fill: #04c13a;
+	}
+	100% {
+		fill: #047CC1;
+	}
+}
+
+#head {
+	stroke-dasharray: 10;
+	/*transition: stroke-dashoffset 3000ms ease-in-out;*/
+}
+
+#head:hover {
+	animation: offset 1000ms infinite linear;
+}
+
+@keyframes offset {
+	to {
+		stroke-dashoffset: 100;
+	}
+}
+
+#bowtie:hover * {
+	opacity: 0;
+}
+
+#shirt:hover * {
+	fill: #fee4cd;
+}
+
+#shoes:hover {
+	fill: #ef3e42;
+}
