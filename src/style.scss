@@ -343,38 +343,8 @@ a.cell {
 		display: none;
 	}
 }
-#shades {
-	transform: rotate3d(0, -13, 3, -.1turn);
-	perspective: 1000px;
-	transform-style: preserve-3d;
-	backface-visibility: visible;
-	width: 100%;
-	height: 100%;
-	position: relative;
-	&::before, &::after {
-		content: '';
-		width: 7vw;
-		height: 4.5vw;
-		position: absolute;
-		top: 5vw;
-		border: 1vw solid black;
-		background: linear-gradient(60deg, black, rgba(0,0,0,.7), white, rgba(0,0,0,.7), black);
-		border-radius: 0 0 8vw 8vw;
-	}
-	&::before {
-		left: 4vw;
-	}
-	&::after {
-		left: 13vw;
-	}
-	img {
-		width: 26vw;
-		mix-blend-mode: darken;
-		position: absolute;
-		left: -4vw;
-		top: 1vw;
-		transform: rotateY(180deg);
-	}
+.cell.canceled {
+	opacity: .1;
 }
 
 .row {
@@ -451,6 +421,9 @@ a.cell {
 }
 
 @media (max-width: 900px) {
+	html, body {
+		font-size: 20px;
+	}
 	header.big {
 		width: unset !important;
 		height: unset !important;
@@ -470,8 +443,11 @@ a.cell {
 	#intro .shape {
 		display: none;
 	}
+	#students.open {
+		display: block;
+	}
 	.cell {
-		width: 48vw;
+		width: 47.5vw;
 	}
 	.cell.circle {
 		height: 48vw;
@@ -490,6 +466,11 @@ a.cell {
 
 @media (max-width: 600px) {
 	html, body {
-		font-size: 10px;
+		font-size: 13px;
+	}
+	.cell {
+		width: 100%;
+		margin: auto;
+		float: none;
 	}
 }
