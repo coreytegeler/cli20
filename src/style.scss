@@ -32,8 +32,9 @@ main {
 	background: black;
 }
 section {
+	width: 100%;
 	display: table;
-	padding: 3em 0 0 0;
+	padding: 3rem 0 0 0;
 	&:not(.open) {
 		display: none;
 	}
@@ -58,16 +59,16 @@ a, a:visited {
 	color: inherit;
 }
 ul {
-	margin: 0 0 1em 0;
+	margin: 0 0 1rem 0;
 }
 p {
-	margin: 0 0 1em 0;
+	margin: 0 0 1rem 0;
 	&:last-child {
 		margin: 0;
 	}
 }
 .bullet {
-	margin-bottom: .5em;
+	margin-bottom: .5rem;
 	padding-left: 2em;
 }
 header {
@@ -162,17 +163,17 @@ header {
 }
 nav {
 	width: 100%;
-	padding: 1em 1em 0 1em;
+	padding: 1rem 1rem 0 1rem;
 	display: table;
-	border-bottom: .25em solid white;
+	border-bottom: .25rem solid white;
 	a.tab {
-		font-size: 1.5em;
+		font-size: 1.5rem;
 		line-height: 1.3em;
-		margin: 0 1em 0 0;
+		margin: 0 1rem 0 0;
 		padding: 1rem;
 		background: black;
 		border: solid;
-		border-width: .25em .25em 0 .25em;
+		border-width: .25rem .25rem 0 .25rem;
 		border-radius: 2rem 2rem 0 0;
 		display: inline-block;
 		position: relative;
@@ -186,7 +187,7 @@ nav {
 .decor {
 	&:not(:last-child)::after {
 		content: "✳";
-		margin: 0 .25em;
+		margin: 0 .25rem;
 		text-decoration: none;
 	}
 	a {
@@ -368,7 +369,6 @@ a.cell {
 		width: 100%;
 		display: table;
 		border-radius: 10px;
-		// box-shadow: 0 0 40px -10px rgba(0,0,0,.25);
 		filter: drop-shadow(0px 0px 5px rgba(0,0,0,.25));
 	}
 	&:hover {
@@ -424,6 +424,9 @@ a.cell {
 	html, body {
 		font-size: 20px;
 	}
+	main {
+		font-size: 20px;
+	}
 	header.big {
 		width: unset !important;
 		height: unset !important;
@@ -450,7 +453,8 @@ a.cell {
 		width: 47.5vw;
 	}
 	.cell.circle {
-		height: 48vw;
+		height: 47.5vw;
+		display: block;
 	}
 	.cell.wide, .cell.wider {
 		float: none;
@@ -466,11 +470,21 @@ a.cell {
 
 @media (max-width: 600px) {
 	html, body {
+		width: 600px;
 		font-size: 13px;
 	}
+	main {
+		font-size: 20px;
+		line-height: 1.2em;
+	}
+	.bullet {
+		padding-left: 1rem;
+	}
 	.cell {
-		width: 100%;
-		margin: auto;
-		float: none;
+		// width: 100%;
+		// margin: auto;
+		// float: none;
+	}
+	.cell.circle {
 	}
 }
